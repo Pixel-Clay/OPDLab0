@@ -1,11 +1,7 @@
 #!/usr/bin/bash
 cd ~
 mkdir lab0
-cd lab0/
-echo "Способности  Scary Face Constrict Leech Life Night Shade Shadow Sneak Fury Swipes Sucker Punch Spider Web Agility Pin Missile Psychic Poison Jab Cross Poison" > ariados4
-echo "Тип покемона  ICE" > glalie6
-echo "NONE" >> glalie6
-echo "Способности Agility Pursuit Bullet Punch Mach Punch Feint Vacuum Wave Quick Guard Fire Punch Ice Punch Thunderpunch Sky Uppercut Mega Punch Detect Counter Close Combat" > hitmonchan7
+cd lab0
 
 mkdir aron4
 cd aron4/
