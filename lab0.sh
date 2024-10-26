@@ -109,3 +109,7 @@ echo ""
 ls -l aron4 2>&1 | grep '^-\|^d' | sort -k6,7
 echo ""
 ls -lR . 2>/dev/null | grep 'wgong' | sort -k6,7 | tail -n 2
+
+cd ~
+chmod -R 777 lab0
+rm -rf ~/lab0
