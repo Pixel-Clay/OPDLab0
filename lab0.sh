@@ -102,7 +102,7 @@ wc -l feebas7/igglybuff aron4/axew 2>&1 | head -n 2 | sort -nr
 echo ""
 ls -lR . | grep ' f' | sort -k6,7 -r
 echo ""
-cat -n $(ls -d *a */*a */*/*a */*/*/*a */*/*/*/*a */*/*/*/*/*a) | sort -r
+cat -n $(ls -d */*a */*/*/*a) | sort -r
 echo ""
 ls -lR swoobat8 2>/dev/null | grep '^-\|^d' | sort -k6,7 -r
 echo ""
