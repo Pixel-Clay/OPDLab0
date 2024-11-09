@@ -50,7 +50,7 @@ cd feebas7/
 echo "Способности  Torrent" > frillish7
 echo "Haunt Water Absorb Cursed Body" >> frillish7
 chmod 064 frillish7
-ln frillish7 ./feebas7/dewgongfrillish
+ln -s ../frillish7 ./feebas7/dewgongfrillish
 
 mkdir swoobat8
 cd swoobat8/
@@ -98,7 +98,7 @@ cd ~/lab0
 echo ""
 wc -l feebas7/igglybuff aron4/axew 2>&1 | head -n 2 | sort -nr -k 1
 echo ""
-ls -lruR | grep -E " [0-9]{2}:[0-9]{2} f" | sort -k6,7 -r
+ls -ldru f* */f* | sort -k6,7 -r
 echo ""
 cat -n $(ls -d */*a */*/*/*a) | sort -r -k2
 echo ""
