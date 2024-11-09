@@ -91,21 +91,31 @@ cp -r swoobat8 feebas7/skiploom
 chmod u-r swoobat8/pawniard
 chmod u-w feebas7/skiploom
 
+ls -lR ~/lab0 2>/dev/null > ~/hierarchy.txt
+
 cd ~/lab0
 
 echo ""
-wc -l feebas7/igglybuff aron4/axew 2>&1 | head -n 2 | sort -nr
+wc -l feebas7/igglybuff aron4/axew 2>&1 | head -n 2 | sort -nr -k 1
 echo ""
-ls -lR . | grep ' f' | sort -k6,7 -r
+ls -lruR | grep -E " [0-9]{2}:[0-9]{2} f" | sort -k6,7 -r
 echo ""
-cat -n $(ls -d */*a */*/*/*a) | sort -r
+cat -n $(ls -d */*a */*/*/*a) | sort -r -k2
 echo ""
 ls -lR swoobat8 2>/dev/null | grep '^-\|^d' | sort -k6,7 -r
 echo ""
 ls -l aron4 2>&1 | grep '^-\|^d' | sort -k6,7
 echo ""
 ls -lR . 2>/dev/null | grep 'wgong' | sort -k6,7 | tail -n 2
+echo ""
 
-cd ~
-chmod -R 777 lab0
-rm -rf ~/lab0
+cd ~/lab0
+rm vibrava3
+chmod u+rwx aron4/aipom
+rm aron4/aipom
+rm Copy_*
+rm -f feebas7/dewgongfrilli*
+chmod -R u+rwx swoobat8
+rm -rf swoobat8
+chmod -R u+rwx feebas7/skiploom
+rm -rf feebas7/skiploom
